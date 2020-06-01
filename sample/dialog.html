@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			html,body{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" value="发送">
+	</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="../src/main.js">
+</script>
+<script>
+	var obj = {
+		width:"568px",
+		height:"210px",
+		background_image:"linear-gradient(18deg,red,yellow,green)",
+		border:"1px solid #000",
+		title:"标题区域",
+		title_size:"24px",
+		title_color:"red",
+		content:"内容区域",
+		seconds:"5000",//秒数
+	}
+		$("input").on("click",function(){
+			var swipe1 = new Swipe(obj);	
+		})
+	
+</script>
